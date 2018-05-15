@@ -5,32 +5,29 @@ const {
   stringReverseSolution3
 } = require('./');
 
-describe('Reverse String', () => {
-  it('reverseString is a function', () => {
-    expect(typeof reverseString).toBe('function');
-  });
-
-  it('should reverse a passed string', () => {
-    expect(reverseString('sample')).toBe('elpmas');
-  });
+// Solution 1
+test('reverseString is a function', () => {
+  expect(typeof reverseString).toBe('function');
 });
 
-describe('Reverse String solution 1', () => {
-  it('reverseString is a function', () => {
-    expect(typeof stringReverseSolution1).toBe('function');
-  });
-
-  it('should reverse a passed string', () => {
-    expect(stringReverseSolution1('sample')).toBe('elpmas');
-  });
+test('should reverse a passed string', () => {
+  expect(reverseString('sample')).toBe('elpmas');
 });
 
-describe('Reverse String solution 3', () => {
-  it('reverseString is a function', () => {
-    expect(typeof stringReverseSolution3).toBe('function');
-  });
+// Solution 2
+test('reverseString is a function', () => {
+  expect(typeof stringReverseSolution1).toBe('function');
+});
 
-  it('should reverse a passed string', () => {
-    expect(stringReverseSolution3('sample')).toBe('elpmas');
-  });
+test('should reverse a passed string', () => {
+  expect(stringReverseSolution1('sample')).toBe('elpmas');
+});
+
+// Solution 3
+test('reverseString is a function', () => {
+  expect(typeof stringReverseSolution3).toBe('function');
+});
+
+test('should reverse a passed string', () => {
+  expect(stringReverseSolution3('sample')).toBe('elpmas');
 });
