@@ -16,7 +16,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "jest src --verbose"
+    "test": "jest --verbose"
   },
   "devDependencies": {
     "jest": "^22.4.3"
